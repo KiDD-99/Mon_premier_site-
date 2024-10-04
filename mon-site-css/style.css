@@ -1,0 +1,105 @@
+/* Style global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #111;
+}
+
+header {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: white;
+
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f00;
+}
+
+.logo-header img {
+  width: 110px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+main {
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+/* Style pour la section des membres */
+.membre {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.membre-photo {
+  width: 250px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.membre-info {
+  background-color:black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.membre-info p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
