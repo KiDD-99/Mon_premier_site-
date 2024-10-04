@@ -94,6 +94,21 @@ h3 {
   line-height: 1.6;
 }
 
+.member {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.member-photo-left {
+  width: 250px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.member-info p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
 /* Footer */
 footer {
   background-color: rgba(0, 0, 0, 0.8);
