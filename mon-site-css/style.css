@@ -118,3 +118,170 @@ footer {
   width: 100%;
   bottom: 0;
 }
+
+/* --------- Responsive Design for Tablets and Phones --------- */
+
+/* Responsive pour iPad (largeur d'écran entre 768px et 1024px) */
+@media only screen and (max-width: 1024px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .member {
+    flex-direction: column;
+    align-items: center;
+  }
+  .membre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-photo-left {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  .membre-photo-left {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .member-info {
+    width: 90%;
+  }
+  .membre-info {
+    width: 90%;
+  }
+}
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.icon {
+  width: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5);
+}
+
+/* Responsive Footer Adjustments */
+@media only screen and (max-width: 1024px) {
+  footer {
+    padding: 10px;
+  }
+
+  .icon {
+    width: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .icon {
+    width: 25px;
+  }
+}
+/* Responsive pour iPhone (largeur d'écran jusqu'à 767px) */
+@media only screen and (max-width: 767px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+  }
+
+  .logo-header img {
+    width: 40px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  .member {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-photo-left {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+
+  .member-info {
+    width: 95%;
+  }
+  .membre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membre-photo-left {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+
+  .membre-info {
+    width: 95%;
+  }
+}
+
+/* Footer responsive */
+@media only screen and (max-width: 1024px) {
+  footer {
+    font-size: 0.9em;
+    padding: 5px;
+  }
+}
