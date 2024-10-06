@@ -1,4 +1,4 @@
-/* Style global */
+/*reglage page*/
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +7,12 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  color: #fff;
-  background-color: #111;
+  color:white;
+  background-color:black;
 }
-
+/*Paramétrage header*/
 header {
-  background-color: #000;
+  background-color:black;
   padding: 20px;
   text-align: center;
   position: relative;
@@ -23,7 +23,7 @@ header h1 {
   color: white;
 
 }
-
+/* Navigation dans le header*/
 nav ul {
   list-style-type: none;
   display: flex;
@@ -36,7 +36,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-size: 1.2em;
   padding: 10px 20px;
@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #f00;
+  color:red;
 }
 
 .logo-header img {
@@ -58,18 +58,18 @@ main {
   padding: 50px;
   text-align: center;
 }
-
+/* Parametrage titre et paragraphe*/
 h2 {
   font-size: 2.2em;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 h3 {
   font-size: 1.8em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-/* Style pour la section des membres */
+/* La section des membres */
 .membre {
   display: flex;
   align-items: flex-start;
@@ -92,26 +92,13 @@ h3 {
 .membre-info p {
   font-size: 1.1em;
   line-height: 1.6;
+  margin-top: 20px;
 }
 
-.member {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 40px;
-}
-.member-photo-left {
-  width: 250px;
-  margin-right: 20px;
-  border-radius: 10px;
-}
-.member-info p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
 
 /* Footer */
 footer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: black;
   padding: 10px;
   text-align: center;
   position: fixed;
@@ -119,7 +106,7 @@ footer {
   bottom: 0;
 }
 
-/* --------- Responsive Design for Tablets and Phones --------- */
+/* --------- Responsive pour les Ipad et les IPhones --------- */
 
 /* Responsive pour iPad (largeur d'écran entre 768px et 1024px) */
 @media only screen and (max-width: 1024px) {
@@ -141,37 +128,28 @@ footer {
     padding: 20px;
   }
 
-  .member {
-    flex-direction: column;
-    align-items: center;
-  }
+ 
   .membre {
     flex-direction: column;
     align-items: center;
   }
 
-  .member-photo-left {
-    width: 200px;
-    margin-bottom: 20px;
-  }
-  .membre-photo-left {
+  .membre-photo {
     width: 200px;
     margin-bottom: 20px;
   }
 
-  .member-info {
-    width: 90%;
-  }
+ 
   .membre-info {
     width: 90%;
   }
 }
 /* Footer */
 footer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: black;
   padding: 20px;
   text-align: center;
-  color: #fff;
+  color: white;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -182,39 +160,39 @@ footer p {
   margin-bottom: 10px;
 }
 
-.social-icons {
+.icone-reseaux {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.social-link {
+.lien-reseaux {
   text-decoration: none;
 }
 
-.icon {
+.icone {
   width: 40px;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.icon:hover {
+.icone:hover {
   transform: scale(1.1);
   filter: brightness(1.5);
 }
 
-/* Responsive Footer Adjustments */
+/* Responsive Footer */
 @media only screen and (max-width: 1024px) {
   footer {
     padding: 10px;
   }
 
-  .icon {
+  .icone {
     width: 30px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .icon {
+  .icone {
     width: 25px;
   }
 }
@@ -250,19 +228,7 @@ footer p {
     font-size: 1.4em;
   }
 
-  .member {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .member-photo-left {
-    width: 150px;
-    margin-bottom: 15px;
-  }
-
-  .member-info {
-    width: 95%;
-  }
+ 
   .membre {
     flex-direction: column;
     align-items: center;
