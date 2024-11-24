@@ -17,8 +17,9 @@
         <li><a href="index.html">Accueil</a></li>
         <li><a href="index.html#histoire">Histoire</a></li>
         <li><a href="index.html#membres">Membres</a></li>
-        <li><a href="#sharingans">Sharingans</a></li>
+        <li><a href="sharingan.html">Sharingans</a></li>
         <li><a href="form.html">Formulaire</a></li>
+        <button id="DarkMode">Dark Mode</button>
       </ul>
     </nav>
   </header>
@@ -35,15 +36,14 @@
         <form id="formulaire-contact">
             <label for="name">Pseudo :</label>
             <input type="text" id="name" name="name" placeholder="Votre nom" required>
-              
-            <label for="age">Âge :</label>
-            <input type="number" id="age" name="age" placeholder="Votre âge" required>
+            <small>Le nom doit contenir au moins 6 caractères.</small>
               
             <label for="email">Email :</label>
             <input type="email" id="email" name="email" placeholder="Votre email" required>
 
             <label for="password">Mot de passe :</label>
             <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+            <small>Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule, un chiffre, et un caractère spécial.</small>
 
             <label for="password"> Entrez à nouveau votre mot de passe :</label>
             <input type="password" id="password2" name="password2" placeholder="Votre mot de passe encore" required>

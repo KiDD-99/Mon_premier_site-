@@ -107,6 +107,33 @@ h3 {
   line-height: 1.6;
   margin-top: 20px;
 }
+/* Champs valides */
+input.valid {
+  border: 2px solid #0f0; /* Vert */
+  background-color: #e0ffe0;
+}
+
+/* Champs invalides */
+input.invalid {
+  border: 2px solid #f00; /* Rouge */
+  background-color: #ffe0e0;
+}
+
+/* Messages d'erreur */
+small {
+  color: #f00;
+  font-size: 0.9em;
+  display: none;
+}
+
+input.invalid + small {
+  display: block;
+}
+
+input.valid + small {
+  display: none;
+}
+
 
 
 /* Footer */
