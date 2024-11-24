@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire Uchiha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-header">
+      <img src="LOGO site Uchiwa-2.png" alt="Logo du clan Uchiha">
+    </div>
+    <h1>Clan Uchiha - Formulaire de Contact</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#histoire">Histoire</a></li>
+        <li><a href="index.html#membres">Membres</a></li>
+        <li><a href="#sharingans">Sharingans</a></li>
+        <li><a href="form.html">Formulaire</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Rejoignez le Clan Uchiha</h2>
+    <div class="tab-container">
+      <div class="tabs">
+        <button class="tab active" onclick="openTab(event, 'info-personnelles')">Informations personnelles</button>
+        <button class="tab" onclick="openTab(event, 'competences')">Compétences</button>
+        <button class="tab" onclick="openTab(event, 'soumettre')">Soumettre</button>
+      </div>
+      <div id="info-personnelles" class="tab-content active">
+        
+        <form id="formulaire-contact">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+              
+            <label for="age">Âge :</label>
+            <input type="number" id="age" name="age" placeholder="Votre âge" required>
+              
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+              
+            <button type="submit">Soumettre</button>
+        </form>
+        
+      </div>
+
+      <div id="competences" class="tab-content">
+        <form>
+          <label for="technique">Techniques favorites :</label>
+          <select id="technique" name="technique">
+            <option value="sharingan">Sharingan</option>
+            <option value="amaterasu">Amaterasu</option>
+            <option value="susanoo">Susanoo</option>
+            <option value="tsukuyomi">Tsukuyomi</option>
+          </select>
+
+          <label for="niveau">Niveau de combat :</label>
+          <input type="range" id="niveau" name="niveau" min="1" max="10">
+
+          <label for="comment">Pourquoi rejoindre le clan ?</label>
+          <textarea id="comment" name="comment" rows="4" placeholder="Expliquez votre motivation"></textarea>
+        </form>
+      </div>
+
+      <div id="soumettre" class="tab-content">
+        <form>
+          <p>Merci d'avoir rempli le formulaire. Cliquez sur "Soumettre" pour envoyer vos informations.</p>
+          <button type="submit">Soumettre</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Suivez-nous sur nos réseaux sociaux et plateformes :</p>
+    <div class="icone-reseaux">
+      <a href="https://www.youtube.com" target="_blank" class="lien-reseaux">
+        <img src="youtube.jpg" alt="YouTube" class="icone">
+      </a>
+      <a href="https://www.twitter.com" target="_blank" class="lien-reseaux">
+        <img src="twitter.jpg" alt="Twitter" class="icone">
+      </a>
+      <a href="https://www.crunchyroll.com" target="_blank" class="lien-reseaux">
+        <img src="crunchyrolll.jpg" alt="Crunchyroll" class="icone">
+      </a>
+    </div>
+    <p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
