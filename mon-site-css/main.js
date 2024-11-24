@@ -2,6 +2,7 @@ let bouton = document.querySelector("#DarkMode");
 bouton.addEventListener("click", function() {
      document.body.classList.toggle("DarkMode");
 })
+
 function openTab(event, tabId) {
      // Masquer tous les contenus
      const contents = document.querySelectorAll('.tab-content');

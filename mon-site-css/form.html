@@ -34,7 +34,7 @@
       <div id="info-personnelles" class="tab-content active">
         
         <form id="formulaire-contact">
-            <label for="name">Nom :</label>
+            <label for="name">Pseudo :</label>
             <input type="text" id="name" name="name" placeholder="Votre nom" required>
               
             <label for="age">Âge :</label>
@@ -42,28 +42,16 @@
               
             <label for="email">Email :</label>
             <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+
+            <label for="password"> Entrez à nouveau votre mot de passe :</label>
+            <input type="password" id="password2" name="password2" placeholder="Votre mot de passe encore" required>
               
             <button type="submit">Soumettre</button>
         </form>
         
-      </div>
-
-      <div id="competences" class="tab-content">
-        <form>
-          <label for="technique">Techniques favorites :</label>
-          <select id="technique" name="technique">
-            <option value="sharingan">Sharingan</option>
-            <option value="amaterasu">Amaterasu</option>
-            <option value="susanoo">Susanoo</option>
-            <option value="tsukuyomi">Tsukuyomi</option>
-          </select>
-
-          <label for="niveau">Niveau de combat :</label>
-          <input type="range" id="niveau" name="niveau" min="1" max="10">
-
-          <label for="comment">Pourquoi rejoindre le clan ?</label>
-          <textarea id="comment" name="comment" rows="4" placeholder="Expliquez votre motivation"></textarea>
-        </form>
       </div>
 
       <div id="soumettre" class="tab-content">
